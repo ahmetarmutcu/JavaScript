@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Oyun Gelişim</title>
+    <meta charset="utf-8">
+    <script src="oyun.js" type="text/javascript"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #game {
+            width: 408px;
+            padding-left: 400px;
+            padding-top: 100px;
+        }
+
+        #game div {
+            width: 200px;
+            height: 200px;
+            float: left;
+            border: 2px solid white;
+
+        }
+
+        .kirmizi {
+            background-color: red;
+        }
+
+        .mavi {
+            background-color: blue;
+        }
+
+        .sari {
+            background-color: yellow;
+        }
+
+        .yesil {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body onload="oyunBaslat()">
+    <div id="game">
+        <div id="hucre1" onclick="tikKontrol(1)" class="kirmizi"></div>
+        <div id="hucre2" onclick="tikKontrol(2)" class="mavi"></div>
+        <div id="hucre3" onclick="tikKontrol(3)" class="sari"></div>
+        <div id="hucre4" onclick="tikKontrol(4)" class="yesil"></div>
+        <div id="puan" style="margin-left:180px;">Puan 10</div>
+    </div>
+
+
+</body>
+
+
+</html>

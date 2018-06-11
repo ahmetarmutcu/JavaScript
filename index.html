@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+        //var name;
+        //name=1234;
+        //name="mehmet";
+        //var correct=true;
+        //document.writeln(name);
+        function print()
+        {
+            var  name=document.getElementById("name").value;
+            var nameprint= document.getElementsByName("nameprint");
+            nameprint[0].innerHTML=name;
+            nameprint[1].innerHTML=name;
+            nameprint[2].innerHTML=name;
+            nameprint[3].innerHTML=name;
+            nameprint[4].innerHTML=name;
+        }
+        
+    </script>
+    </head>
+
+    <body>
+        <input type="text" id="name" placeholder="Adınızı giriniz">
+        <input type="button" value="Giriş" onclick="javascript:print();">
+        <span name="nameprint">Ad burada yazıcak</span>
+        <span name="nameprint">Ad burada yazıcak</span>
+        <span name="nameprint">Ad burada yazıcak</span>
+        <span name="nameprint">Ad burada yazıcak</span>
+        <span name="nameprint">Ad burada yazıcak</span>
+    </body>
+
+
+</html>
